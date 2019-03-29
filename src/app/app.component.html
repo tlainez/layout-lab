@@ -1,16 +1,26 @@
-<div class="w-100 h-100 d-flex flex-column">
-  <p>Tab 1</p>
-  <div class="slab-flex-1 d-flex flex-row p-2" style="background-color: orangered;">
-    <div class="flex-column bg-warning" style="width: 250px;">Interpretation
-      <div><input class="w-100" type="text"/></div>
-      <div class="slab-flex-1"><textarea class="h-100 w-100"></textarea></div>
-    </div>
-    <div class="slab-flex-1 bg-success d-flex flex-row">
-      <div class="slab-flex-1 d-flex flex-column">
-        <div class="h-50" style="background-color: greenyellow;">External</div>
-        <div class="h-50" style="background-color: darkseagreen;">Internal</div>
-      </div>
-    </div>
+<systelab-dialog-header>Titulo</systelab-dialog-header>
+<!--<div class="d-flex flex-column h-100">
+  <div class="slab-flex-1 d-flex">
+
   </div>
   <div class="bg-white" style="height: 60px;">Button panel</div>
-</div>
+</div>-->
+<systelab-tabs class="slab-flex-1 d-flex">
+  <systelab-tab [title]="'General'" class="d-flex">
+    <div class="slab-flex-1 d-flex flex-column">
+      <div class="slab-flex-1 d-flex p-2" style="background-color: orangered;">
+        <div class="flex-column bg-warning" style="width: 250px;">Interpretation
+          <div><input class="w-100" type="text"/></div>
+          <div class="slab-flex-1"><textarea class="h-100 w-100"></textarea></div>
+        </div>
+        <div class="slab-flex-1 bg-success d-flex">
+          <div class="slab-flex-1 d-flex flex-column">
+            <div class="h-50" style="background-color: greenyellow;">External</div>
+            <div class="h-50" style="background-color: darkseagreen;">Internal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </systelab-tab>
+</systelab-tabs>
+<div class="bg-white" style="height: 60px;">Button panel</div>
